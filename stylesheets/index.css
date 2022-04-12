@@ -568,14 +568,10 @@ h1.logo img {
           justify-content: space-between;
 }
 
-.new-items .container li {
+.new-items li {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 340px;
           flex: 0 0 340px;
-  /**
-        display: block;
-        width: 340px;
-        padding-right: 30px;*/
 }
 
 .featured-item {
@@ -823,6 +819,7 @@ h1.logo img {
         flex-basis: auto;
   }
   li > a {
+    margin-right: 30px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 200px;
             flex: 0 0 200px;

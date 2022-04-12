@@ -41,7 +41,7 @@
 				<button id="menuBtn">
 					MENU<i class="fas fa-chevron-down"></i>
 				</button>
-				<ul id="menu-list" class="hide">
+				<ul id="menu-list">
 					<li><a href="#">貓奴吃土區</a></li>
 					<li><a href="#">貓奴快訊</a></li>
 					<li><a href="#">貓奴曬主子</a></li>
@@ -206,9 +206,13 @@
 			var menuBtn = document.querySelector("#menuBtn");
 			var menuList = document.querySelector("#menu-list");
 
-			menuBtn.addEventListener("click", function () {
-				menuList.classList.toggle("hide");
-			});
+			if (window.innerWidth <= 768) {
+				menuList.classList.add("hide");
+
+				menuBtn.addEventListener("click", function () {
+					menuList.classList.toggle("hide");
+				});
+			}
 		</script>
 	</body>
 </html>

@@ -185,12 +185,8 @@ h1.logo {
     display: flex;
     justify-content: space-between;
   }
-  .container li {
+  li {
     flex: 0 0 340px;
-    /**
-        display: block;
-        width: 340px;
-        padding-right: 30px;*/
   }
 }
 
@@ -373,7 +369,9 @@ h1.logo {
     display: flex;
     flex-basis: auto;
   }
+  
   li > a {
+    margin-right: 30px;
     flex: 0 0 200px;
   }
   li > div {
